@@ -8,8 +8,6 @@ class CashRegister
     @@items.clear
     @total = 0
     @discount = discount
-    
-
     apply_discount
   end # initialize
 
