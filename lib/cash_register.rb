@@ -44,11 +44,11 @@ class CashRegister
   end
 
   def previous_transaction
-    
+    self.add_item
   end
 
   def void_last_transaction
-
+    self.previous_transaction = 
   end
 
 end
