@@ -20,7 +20,7 @@ class CashRegister
     @previous_total = self.total
     @total = self.total + (price * quantity)
 
-    @items << item_name
+    @@items << item_name
   end # add_item
 
   def apply_discount(discount = 0)
@@ -34,7 +34,7 @@ class CashRegister
   end # apply_discount
 
   def items
-    @items
+    @@items
   end
 
   def void_last_transaction
