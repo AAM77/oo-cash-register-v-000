@@ -19,13 +19,12 @@ class CashRegister
     @item = item_name
     @previous_total = self.total
     @total = self.total + (price * quantity)
+    @previous_transaction = price * quantity
 
     while quantity > 0
       @@items << @item
       quantity = quantity - 1
     end
-
-    @previous_transaction = price * quantity
 
   end # add_item
 
@@ -48,7 +47,7 @@ class CashRegister
   end
 
   def void_last_transaction
-    self.previous_transaction = 
+    self.previous_transaction =
   end
 
 end
