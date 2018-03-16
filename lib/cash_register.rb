@@ -5,8 +5,13 @@ class CashRegister
   @@items = [ ]
 
   def initialize(discount = 0)
-    @total = 0
-    @discount = discount
+    if (discount == 0)
+      @total = 0
+    else
+      @discount = discount
+      self.apply_discount
+    end
+      
 
   end
 
@@ -16,7 +21,7 @@ class CashRegister
 
   def add_item(item_name, price, quantity = 1)
     @item = item_name
-    @previous_total = @total
+    @previous_total = self.total
     @total = @total + (price * quantity)
 
     self.total
