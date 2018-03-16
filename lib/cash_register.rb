@@ -8,12 +8,7 @@ class CashRegister
     @@items.clear
     @discount = discount
 
-    if @discount == 0
-      @total = 0
-      no_discount
-    elsif @discount > 0
-      self.apply_discount
-    end
+    apply_discount
 
     @total = 0
     @discount = discount
