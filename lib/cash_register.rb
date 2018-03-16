@@ -4,7 +4,7 @@ class CashRegister
 
   @@items = [ ]
 
-  def initialize(discount = 0, no_discount = "There is no discount to apply.")
+  def initialize
     @@items.clear
     @total = 0
     @discount = discount
