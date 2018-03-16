@@ -24,7 +24,7 @@ class CashRegister
   end # add_item
 
   def apply_discount(discount = "There is no discount to apply.")
-    @total = @total - @discount
+    @total = @total - (@discount * 10)
   end # apply_discount
 
   def items
