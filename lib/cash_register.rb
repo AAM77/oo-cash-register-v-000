@@ -8,7 +8,7 @@ class CashRegister
     @@items.clear
     @total = 0
     @discount = discount
-    apply_discount
+    self.apply_discount
   end # initialize
 
   def total
