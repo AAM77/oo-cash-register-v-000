@@ -23,10 +23,10 @@ class CashRegister
     @@items << item_name
   end # add_item
 
-  def apply_discount(discount = 0, no_discount = "There is no discount to apply.")
+  def apply_discount(discount = 0)
     if @discount == 0
       self.total
-      no_discount
+      "There is no discount to apply."
     else
       @total = @total - discount
       self.total
