@@ -4,12 +4,13 @@ class CashRegister
 
   @@items = [ ]
 
-  def initialize(discount = 0)
+  def initialize(discount = 0, no_discount = "There is no discount to apply.")
     @@items.clear
 
     if discount == 0
       @total = 0
-    elsif discount.to_i > 0
+      no_discount
+    elsif discount > 0
       self.apply_discount
     end
 
@@ -29,7 +30,7 @@ class CashRegister
     @@items << item_name
   end # add_item
 
-  def apply_discount(discount = "There is no discount to apply.")
+  def apply_discount(discount)
     @total = @total - (@discount * 10)
   end # apply_discount
 
