@@ -28,8 +28,8 @@ class CashRegister
       self.total
       no_discount
     elsif @discount > 0
-      self.total = self.total - (discount*10.0)
-      self.total
+      @total = self.total - (discount*10.0)
+      @total
     end
   end # apply_discount
 
