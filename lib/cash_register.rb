@@ -20,7 +20,6 @@ class CashRegister
     @total = @total + (price * quantity)
 
     self.total
-    
   end
 
 end
