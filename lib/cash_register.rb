@@ -33,10 +33,10 @@ class CashRegister
 
   def apply_discount(discount = 0, no_discount = "There is no discount to apply.")
     if @discount == 0
-      @total
+      self.total
       no_discount
     elsif @discount > 0
-      @total = @total-(discount*10)
+      @total = self.total -(discount*10)
     end
   end # apply_discount
 
