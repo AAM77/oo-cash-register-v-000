@@ -14,7 +14,7 @@ class CashRegister
     end
   end # initialize
 
-  def total
+  def self.total
     @total
   end # total
 
