@@ -11,7 +11,7 @@ class CashRegister
       @discount = discount
       self.apply_discount
     end
-  end
+  end # initialize
 
   def total
     @total
