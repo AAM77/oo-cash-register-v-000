@@ -22,6 +22,7 @@ class CashRegister
 
     while quantity > 0
       @@items << @item
+      @previous_item << @item
       quantity = quantity - 1
     end
 
