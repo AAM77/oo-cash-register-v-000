@@ -36,7 +36,7 @@ class CashRegister
       @total
       no_discount
     elsif @discount > 0
-      @total = @total - (discount*10)
+      @total = @total-(discount*10)
     end
   end # apply_discount
 
