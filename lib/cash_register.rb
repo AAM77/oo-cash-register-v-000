@@ -15,7 +15,7 @@ class CashRegister
 
   def total
     @total
-  end
+  end # total
 
   def add_item(item_name, price, quantity = 1)
     @item = item_name
