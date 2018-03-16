@@ -19,7 +19,7 @@ class CashRegister
     @item = item_name
     @previous_total = self.total
     @total = self.total + (price * quantity)
-    
+
     while quantity > 0
       @@items << @item
       quantity = quantity - 1
