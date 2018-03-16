@@ -37,6 +37,7 @@ class CashRegister
       no_discount
     elsif @discount > 0
       @total = @total - (discount*10)
+    end
   end # apply_discount
 
   def items
