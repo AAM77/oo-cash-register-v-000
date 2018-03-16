@@ -5,6 +5,7 @@ class CashRegister
   attr_accessor :total, :items, :previous_transaction, :discount
 
   def initialize(discount = 0)
+    @@items.clear
     @total = 0
     @discount = discount
     self.apply_discount
