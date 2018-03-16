@@ -6,7 +6,7 @@ class CashRegister
 
   def initialize(discount = 0)
     @@items.clear
-    @total = 0
+    self.total = 0
     @discount = discount
     self.apply_discount
   end # initialize
