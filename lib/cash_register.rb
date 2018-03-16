@@ -30,6 +30,7 @@ class CashRegister
     elsif @discount > 0
       @total = self.total - (discount*10.0)
       @total
+      puts "After the discount, the total comes to $#{@total}"
     end
   end # apply_discount
 
