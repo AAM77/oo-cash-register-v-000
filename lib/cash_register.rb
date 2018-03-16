@@ -4,7 +4,7 @@ class CashRegister
 
   @@items = [ ]
 
-  def initialize(discount = 0)
+  def initialize(discount = nil)
     if (discount == 0)
       @total = 0
       puts "There is no discount to apply."
