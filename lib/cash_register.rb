@@ -30,7 +30,7 @@ class CashRegister
     else
       @total = @total - discount
       self.total
-      "After the discount, the total comes to $#{@total}"
+      puts "After the discount, the total comes to $#{@total}"
     end
   end # apply_discount
 
