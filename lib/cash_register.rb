@@ -11,7 +11,7 @@ class CashRegister
     if @discount == 0
       @total = 0
       no_discount
-    elsif discount > 0
+    elsif @discount > 0
       self.apply_discount
     end
 
