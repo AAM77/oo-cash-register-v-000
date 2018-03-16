@@ -28,7 +28,7 @@ class CashRegister
       self.total
       no_discount
     else
-      @total = self.total - (discount.to_f * 10)
+      @total = self.total - (discount * 10)
       @total
       puts "After the discount, the total comes to $#{@total}"
     end
