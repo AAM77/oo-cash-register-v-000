@@ -2,13 +2,12 @@ class CashRegister
 
   attr_accessor :total, :previous_transaction, :discount
 
-  @@items = [ ]
-
   def initialize(discount = 0)
     @@items.clear
     @total = 0
     @discount = discount
     self.apply_discount
+    @items = [ ]
   end # initialize
 
   def total
