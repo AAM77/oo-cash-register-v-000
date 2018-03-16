@@ -1,6 +1,6 @@
 class CashRegister
 
-  attr_accessor 
+  attr_accessor
 
   @@items = [ ]
 
@@ -15,5 +15,6 @@ class CashRegister
   end
 
   def add_item(item_name, price, quantity = 1)
+    
 
 end
