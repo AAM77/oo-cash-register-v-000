@@ -1,6 +1,6 @@
 class CashRegister
 
-  attr_accessor
+  attr_accessor :total
 
   @@items = [ ]
 
@@ -14,7 +14,7 @@ class CashRegister
     end
   end # initialize
 
-  def self.total
+  def total
     @total
   end # total
 
