@@ -7,6 +7,7 @@ class CashRegister
   def initialize(discount = 0)
     if (discount == 0)
       @total = 0
+      puts "There is no discount to apply."
     else
       @discount = discount
       self.apply_discount
@@ -30,5 +31,9 @@ class CashRegister
 
     self.total
   end # apply_discount
+
+  def items
+    @@items
+  end
 
 end
