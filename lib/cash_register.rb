@@ -23,7 +23,7 @@ class CashRegister
     @total
   end # total
 
-  def add_item(item_name, price, quantity = 1)
+  def add_item(item_name, price, quantity = 1.0)
     @item = item_name
     @previous_total = self.total
     @total = @total + (price * quantity)
@@ -36,7 +36,7 @@ class CashRegister
       self.total
       no_discount
     elsif @discount > 0
-      self.total = self.total - (discount*10)
+      self.total = self.total - (discount*10.0)
     end
   end # apply_discount
 
