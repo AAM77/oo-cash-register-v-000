@@ -7,6 +7,12 @@ class CashRegister
   def initialize(discount = "There is no discount to apply.")
     @@items.clear
 
+    if discount.to_i == 0
+      @total = 0
+    elsif discount.to_i > 0
+      self.apply_discount
+    end
+
     @total = 0
     @discount = discount
   end # initialize
