@@ -26,7 +26,7 @@ class CashRegister
   end # add_item
 
   def apply_discount(discount = 0)
-
-  end
+    
+  end # apply_discount
 
 end
